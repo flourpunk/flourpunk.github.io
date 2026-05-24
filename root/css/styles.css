@@ -1,0 +1,754 @@
+html{
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
+}
+
+body p{
+font-family: "Montserrat";
+text-align: left;
+font-size:1.1em;
+
+}
+
+.container{
+    max-width:960px;
+    margin-bottom: 4em;
+}
+
+
+.clear{
+    clear:both;
+}
+
+<!--NAV-->
+a:link{
+    text-decoration: none;
+}
+
+.icon-bar{
+    background-color:black;   
+}
+
+.navbar{
+    margin-top: 3em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0em;
+    padding-bottom:1em;
+    border-bottom: 2px solid #66DDC9;    
+}
+
+.navbar-brand{
+    font-size: 2.5em;
+    letter-spacing: -.5px;
+    text-transform: lowercase;
+    padding-left: 0px;
+    color: #66DDC9;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.navbar-brand:hover{
+    color:#e24baa;
+}
+
+
+.navbar-brand a:visited {
+    color: #e24baa;
+}
+
+.navbar-collapse{
+    float:right;
+}
+
+.nav li a{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: lowercase;
+    float: right;
+    color: #66DDC9;
+    padding:1em;
+    
+}
+
+.navbar-nav li a:hover{
+    color:#e24baa;
+    text-decoration: underline;
+    background-color: rgba(227, 212, 94, 0);   
+}
+
+.navbar-nav .active a{
+    color:#e24baa;
+    text-decoration: underline;
+}
+
+/*INDEX*/
+
+.index{
+    margin: 1em 0em 0em 0em;
+}
+
+.index p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5em;
+    line-height: 1.3em;
+    font-weight: 400;
+    
+}
+
+.index .col-md-12{
+    padding: 1.5em 1.6em 2em;      
+}
+
+.index a:hover{
+    color: #e24baa;
+}
+
+.index a{
+    text-decoration: underline;
+    color:#333;
+    font-weight:600;
+}
+
+.small a{
+    font-family: "Raleway", sans-serif;
+    font-size: .65em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.indexbox{
+	position: relative;
+    background: #ffffff;
+    overflow: hidden;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.indexbox img {
+	position: relative;
+	display: inline-block;
+    width:100%;
+    cursor: pointer;
+}
+
+.centre p {
+    text-align: center;
+}
+
+.centre {
+    margin-bottom: 4em;
+}
+
+
+/*SORTING NAV*/
+.portfolioFilter {
+    text-align: left;
+    margin: 1.5em;
+}
+
+.portfolioFilter a {
+    display: inline-block;
+    padding-right: 1em;
+    color: #626262;
+    text-decoration:none;
+    font-size:1em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+}
+
+.portfolioFilter a:hover{
+    color:#FEBCF0;
+    font-weight: 700;
+}
+
+.portfolioFilter a.current { 
+    color:#66DDC9;
+    font-weight: 700;  
+}
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope, .isotope .isotope-item {
+  /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+
+/*WORK GALLERY THUMB STYLING*/
+
+.portfolioContainer{
+    margin-bottom:3em;
+}
+
+.artspace{
+    margin-top: 3em;
+}
+
+.box{
+	position: relative;
+    background: #ffffff;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+}
+
+.box img {
+	position: relative;
+	display: inline-block;
+    width:100%;
+    cursor: pointer;
+}
+
+.gallerybox{
+	position: relative;
+    background: #ffffff;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+}
+
+.gallerybox img {
+	position: relative;
+	display: inline-block;
+    width:100%;
+    cursor: pointer;
+}
+
+figcaption{
+    width:100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);  
+    
+}
+
+figcaption h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 700;
+    width:100%;
+    text-transform: uppercase;
+    margin-bottom: .25em;
+}
+
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+}
+
+.pink{
+    background-color: #FEBCF0;  
+}
+
+.yellow{
+    background-color: #f8c63e;
+}
+
+.darkpeach{
+    background-color: #edb093;
+}
+
+.orange{
+    background-color: #fa9939;
+}
+
+.darkpurple{
+    background-color: #1e1374;
+}
+
+.fushia{
+    background-color: #c4268a;
+}
+
+.red{
+    background-color: #b7071c;
+}
+
+.blue{
+    background-color: #6cace5;
+}
+
+.brown{
+    background-color: #d0a677;
+}
+
+.lightpink{
+    background-color: #F9CDEA;
+}
+
+.darkgreen{
+    background-color: #0a3308;
+}
+
+.lightpeach{
+    background-color: #F9CFD2;
+}
+
+.lightblue{
+    background-color: #A7EADD;
+}
+
+.greyblue{
+    background-color: #8da5cc;
+}
+
+.purple{
+    background-color: #9e76dd;
+}
+
+.superlightpink{
+    background-color: #FFE9EA
+}
+
+.box:hover .overlay{
+    opacity: 1;   
+}
+
+/**DETAILED DESIGN PAGES**/
+.designpage{
+    margin-bottom: 0;
+}
+
+h1{
+    color: #000000;
+    font-family: "Montserrat";
+    font-size: 2.2em;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+}
+
+h3{ color: #66DDC9;
+    font-family: "Montserrat";
+    font-size: 1.8em;
+    text-align: left;
+    margin-bottom: 0;   
+}
+
+h4{
+    color: #333;
+    font-family: "Montserrat";
+    font-size: 1.1em;
+    font-weight: 500;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 0em;   
+}
+
+h5{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    color: #666666;
+    text-align: left;
+    margin:.3em 0 1.5em 0;
+}
+
+.content{
+    margin-left:1em;
+    margin-right:1em;
+}
+
+.video{
+    margin-top: .4em;
+    margin-bottom: 1.5em;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    margin-left: 0px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img img{
+    max-width: 1440px;
+    width:100%;
+}
+
+.subhero-img img{
+    padding-top:1.5em;
+    width:100%;  
+}
+
+.title h4{
+    margin-bottom: .4em;
+
+}
+.title img{
+    width:100%;
+    padding-bottom:1.5em;
+ 
+}
+
+
+.description{
+    display:inline-block; 
+    padding-top:1.5em;
+}
+
+.description p{
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+}
+
+.smallbottom{
+    display: none;
+    
+}
+
+.lastrow{
+    margin-bottom:1.5em;
+    
+}
+
+.verylastrow .center img{
+    width:19px;
+    margin-right: .5em;
+}
+
+.verylastrow{
+    height: 2.5em;
+    margin-bottom: 2em;
+}
+
+.glyphicon{
+    padding:.5em;
+    color: #66DDC9;
+    
+}
+
+.verylastrow a{
+    color: #666666;
+    color: #66DDC9;
+    text-decoration: underline;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 2.5em;
+    font-family: "Raleway", sans-serif;
+}
+
+.verylastrow a:hover{
+    color: #F25AB9;
+    font-weight: 600;
+}
+
+
+.prev{
+    text-align: left;
+}
+
+
+.center{
+    text-align: center;
+    vertical-align:bottom;
+    
+}
+
+.next{
+    text-align: right;
+    font-family: "Montserrat", sans-serif;
+}
+
+/**PHOTOGRAPHY**/
+figcaption p{
+    color:white;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+
+/**ABOUT PAGE**/
+.about{
+    margin:1.5em 1em 3em;
+    
+}
+
+.profile{
+    text-align: center;
+    margin: 0 0 1.5em;
+    
+}
+
+
+.profile img{
+    border-radius: 50%;
+    max-width: 30em;
+    width: 100%;
+}
+
+
+.about p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    margin: 0 0 1em;
+}
+
+.about h1{
+    margin:0;
+    padding-bottom: 0.5em;
+    text-align: left;
+    color: #000;
+    font-weight: 600; 
+    font-size: 2.5em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about a{
+    color: #000;
+    text-decoration: underline;
+}
+
+.about a:hover{
+    color:#F25AB9;
+}
+
+.line{
+    border-bottom: 1px solid #edb093;   
+}
+
+.extraspace{
+    padding-top:1em;
+}
+
+/**CONTACT FORM**/
+
+.margin{
+    margin:1.5em 0em 3em;
+}
+
+.contact img{
+    width:100%;
+    margin-bottom: 1.5em;
+}
+
+
+.contactheading h1{
+    margin: 0;
+    text-align: left;
+    color: #000;
+    font-weight: 600; 
+    font-size: 2.5em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contactheading p{
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    margin: 0 0 1.5em;
+}
+
+
+.contactheading a{
+    color: #000;
+    text-decoration: underline;
+}
+
+.contactheading a:hover{
+    color: #F25AB9;
+}
+
+
+/**FOOTER**/
+
+.footer{
+    margin:0 1em;
+    position: absolute;
+    bottom: 1em;
+    max-width: 930px;
+    width: 100%;
+
+}
+
+footer{
+    height: 4em;
+    font-family: "Raleway", sans-serif;
+    font-size: .9em;
+    line-height: 3em;
+    color:#747474;
+}
+
+footer a{
+    color:#747474; 
+}
+
+.social{
+    text-align:right;
+    
+}
+
+.social img{
+    margin-left:.25em;
+}
+
+
+/**MEDIA QUERIES**/
+
+/**Large Devices; desktops, less than 1200px**/
+@media (max-width: 1199px){
+
+}
+
+/**Medium Devices; tablets, less than 992px**/
+@media (max-width: 991px){
+ .navbar-brand{
+    font-size: 2.2em;
+}
+
+.nav li a{
+    font-size: 1.1em;
+    }  
+    
+.index p{
+        font-size:4em;
+    }
+    
+    .content h1{
+        font-size: 2em;
+    }
+    
+  
+    
+    
+    .footer{
+    position: absolute;
+    bottom: 1em;
+    max-width: 720px;
+}
+
+ 
+    
+}
+
+/**Small Devices; landscape phones, less than 768px**/
+@media (max-width: 767px){
+    
+    .navbar{
+        margin-top: 1.5em;
+    }
+    
+/*
+    .verylastrow .center img{
+    margin-right: 0em;
+    }
+*/
+    
+    .verylastrow{
+    margin-bottom: 0em;
+}
+    
+    .index p{
+        font-size:3em;
+        line-height: 1.6em
+    }
+    
+    .designpage{
+        margin-bottom: 1.5em;
+    }
+    
+    .design{
+        margin-bottom: 4em;
+    }
+    
+    .bigbottom{
+        display: none;
+        
+    }
+    
+    .smallbottom{
+        display:block;
+    }
+    
+    .smallbottom img{
+        padding-right: .5em;
+    }
+    
+    .footer{
+    max-width: 730px;
+         margin:1.5em 0;
+        text-align: center;
+}
+      .social{
+        text-align: center;
+        margin:0;
+    }
+        
+    
+}
+
+/**Extra Small Devices; portrait phones, less than 576px**/
+@media (max-width: 575px){
+    
+    .portfolioContainer{
+    margin-bottom:2.5em;
+}
+
+     .index p{
+        font-size:2em;
+        line-height: 1.6em
+    }
+    
+    .contactheading h1{
+        font-size: 2em;
+        margin-bottom: .3em;
+        
+    
+    }
+    
+    .footer{
+    max-width: 500px;
+        margin:1.5em 0;
+        text-align: center;
+}
+    
+    footer{
+        height:3em;
+        line-height: 3em;
+    }
+  
+         
+        
+    }
+    
+}
